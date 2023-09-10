@@ -7,5 +7,5 @@ from .models import Product, ProductImages, Review, Brand
 class ProductList(generic.ListView):
     model=Product
 
-class ProductDetail(generic.DeleteView):
+class ProductDetail(generic.DetailView):
     model=Product
