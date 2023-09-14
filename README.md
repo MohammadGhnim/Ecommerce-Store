@@ -1,2 +1,2 @@
-# Ecommerce-Store
+# Django Ecommerce Store
 Online store using python, django, rest framework, payment and more ...
