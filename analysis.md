@@ -2,11 +2,11 @@
     - Name
     - Price
     - Description
-    - Images
+    - Images *
     - Tags
-    - Reviews
+    - Reviews *
     - Sku
-    - Brand
+    - Brand *
     - Flag = [New, Sale, Feature]
 
 
