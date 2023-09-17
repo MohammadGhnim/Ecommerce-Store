@@ -18,7 +18,7 @@ def seed_brand(n):
             name=fake.name() ,
             image=f'brand/{images[random.randint(0,12)]}'
         )
-        print(f'{n} Brands Was Creted Successfuly ... ')
+        
 
 def seed_product(n):
     fake = Faker()
@@ -29,8 +29,8 @@ def seed_product(n):
         Product.objects.create(
             name=fake.name(), 
             description=fake.text(max_nb_chars=30000),
-            sku=random.randint(100,1000000),
-            price=round(random.uniform(20.99,90.99), 2),
+            sku=random.randint(100,10000000),
+            price=round(random.uniform(20.99,99.99),2),
             subtitle=fake.text(max_nb_chars=600),
             image=f'brand/{images[random.randint(0,12)]}',
             brand=Brand.objects.get(id=random.randint(1,104)),
