@@ -15,3 +15,5 @@
 - payment
 - charts
 - deploy
+- ajax
+- translation

@@ -11,11 +11,10 @@ from products.models import Product, Brand
 def seed_brand(n):
     fake = Faker()
     images=['2.jpg','3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpeg', '9.jpg','10.jpg', '11.png', '12.png', '13.jpeg', '14.jpeg']
-    
 
     for x in range(n):
         Brand.objects.create(
-            name=fake.name() ,
+            name=fake.name(),
             image=f'brand/{images[random.randint(0,12)]}'
         )
         
@@ -33,7 +32,7 @@ def seed_product(n):
             price=round(random.uniform(20.99,99.99),2),
             subtitle=fake.text(max_nb_chars=600),
             image=f'brand/{images[random.randint(0,12)]}',
-            brand=Brand.objects.get(id=random.randint(1,104)),
+            brand = Brand.objects.get(id=random.randint(1,104)),
             flag=flag_types[random.randint(0,2)],
         )
     print(f'{n} Product Was Creted Successfuly ... ')
