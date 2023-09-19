@@ -1,7 +1,5 @@
 - add review
-- company model
-- show company data
-- setup navbar , footer
+- home
 - add oeders
 - add cart
 - add users
