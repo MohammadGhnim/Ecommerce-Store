@@ -1,6 +1,6 @@
+- sql
 - add review
-- home
-- add oeders
+- add orders
 - add cart
 - add users
 - add api 
