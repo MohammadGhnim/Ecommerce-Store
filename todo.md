@@ -1,5 +1,4 @@
 - sql
-- add review
 - add orders
 - add cart
 - add users
