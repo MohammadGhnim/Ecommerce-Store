@@ -4,7 +4,6 @@
 - add cart
 - add users
 - add api 
-- queryset api
 - caching 
 - celery
 - redis
