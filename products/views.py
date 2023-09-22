@@ -79,6 +79,7 @@ def post_list_debug(request):
 
     # data = Product.objects.annotate(is_new=Value(True))
     # data = Product.objects.annotate(price_with_tax=F('price')*1.2)
+
     data = Brand.objects.annotate(posts=Count('product_brand'))
 
 
@@ -98,6 +99,10 @@ class BrandList(generic.ListView):
     model=Brand
     paginate_by=50
 
+    def get_queryset(self):
+        object_list=Brand.objects.annotate(posts_count=Count('product_brand'))
+        return object_list
+
 class BrandDetail(generic.ListView):
     model=Product
     template_name='products/brand_detail.html'
@@ -109,6 +114,6 @@ class BrandDetail(generic.ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["brand"] = Brand.objects.get(slug=self.kwargs['slug'])
+        context["brand"] = Brand.objects.filter(slug=self.kwargs['slug']).annotate(posts_count=Count('product_brand'))[0]
         return context
     
