@@ -10,6 +10,11 @@ class Profile(models.Model):
     def __str__(self):
         return str(self.user)
 
+
+def create_profile():
+    pass
+
+
 PHONE_CHOICES= (
     ('Primary', 'Primary'),
     ('Secondary', 'Secondary'),
