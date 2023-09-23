@@ -22,11 +22,13 @@ from django.conf.urls.static import static
 from settings.views import home
 
 urlpatterns = [
+    path("accounts/", include("django.contrib.auth.urls")),
     path('admin/', admin.site.urls),
     path('products/', include('products.urls', namespace='products')),
     path('', home),
     path('summernote/', include('django_summernote.urls')),
     path("__debug__/", include("debug_toolbar.urls")),
+    
 ]
 
 
