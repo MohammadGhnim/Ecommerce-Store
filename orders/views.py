@@ -24,7 +24,7 @@ def add_to_cart(request):
     cart_detail.price=product.price
     cart_detail.total=int(quantity)*product.price
     cart_detail.save()
-    return redirect(f'/products/{{product.slug}}')
+    return redirect(f'/products/{product.slug}')
 
 
     # cart_detail
