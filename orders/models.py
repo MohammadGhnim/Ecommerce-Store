@@ -45,7 +45,7 @@ class Cart(models.Model):
         total=0
         for product in self.cart_detail.all():
             total+=product.total
-        return total
+        return round(total, 2)
     
     
 class CartDetail(models.Model):
