@@ -7,7 +7,7 @@ from products.models import Product
 
 
 class OrderList(ListView):
-    model = Order
+    model = Order             #object_list    order_list
 
 
 def add_to_cart(request):
