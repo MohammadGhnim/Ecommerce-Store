@@ -1,3 +1,5 @@
+from typing import Any
+from django.db.models.query import QuerySet
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from .models import Order, Cart, CartDetail
@@ -8,6 +10,11 @@ from products.models import Product
 
 class OrderList(ListView):
     model = Order             #object_list    order_list
+    
+    def get_queryset(self):
+        queryset=super().get_queryset()  # all orders
+        queryset=queryset.filter(user=self.request.user)
+        return queryset
 
 
 def add_to_cart(request):
