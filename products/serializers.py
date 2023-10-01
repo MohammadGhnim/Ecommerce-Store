@@ -5,7 +5,7 @@ from django.db.models.aggregates import Avg
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    brand=serializers.StringRelatedField()
+    #brand=serializers.StringRelatedField()
     review_count=serializers.SerializerMethodField()
     avg_rate=serializers.SerializerMethodField()
 

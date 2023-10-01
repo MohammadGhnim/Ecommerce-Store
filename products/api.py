@@ -18,7 +18,7 @@ from .models import Product, Brand
 #     data=ProductSerializer(queryset, context={'reqeust':request}).data
 #     return Response({'data':data}) 
 
-class ProuctListAPI(generics.ListAPIView):
+class ProuctListAPI(generics.ListCreateAPIView):
     queryset=Product.objects.all()
     serializer_class=ProductSerializer
 
