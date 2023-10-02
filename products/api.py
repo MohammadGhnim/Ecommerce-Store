@@ -3,6 +3,9 @@ from rest_framework.response import Response
 from rest_framework import generics
 from .serializers import ProductSerializer, BrandSerializer, BrandDetailSerializer
 from .models import Product, Brand
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
+
 
 
 # @api_view(['GET'])
@@ -18,12 +21,20 @@ from .models import Product, Brand
 #     data=ProductSerializer(queryset, context={'reqeust':request}).data
 #     return Response({'data':data}) 
 
-class ProuctListAPI(generics.ListCreateAPIView):
+class ProuctListAPI(generics.ListAPIView):
     queryset=Product.objects.all()
     serializer_class=ProductSerializer
+    # filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['brand', 'flag', 'name', 'price']
+
+    # filter_backends = [filters.SearchFilter]
+    # search_fields = ['name', 'subtitle']
+
+    # filter_backends = [filters.OrderingFilter]
+    # ordering_fields = ['price', 'flag']
 
 
-class ProductDetailAPI(generics.RetrieveUpdateDestroyAPIView):
+class ProductDetailAPI(generics.RetrieveAPIView):
     queryset=Product.objects.all()
     serializer_class=ProductSerializer
 
