@@ -6,7 +6,7 @@ from .forms import ReviewForm
 from .models import Product, ProductImages, Review, Brand
 from django.db.models import Q, F, Value , Func
 from django.db.models.aggregates import Count,Avg,Sum,Min,Max
-
+from django.conf import settings
 # Create your views here.
 
 
@@ -90,7 +90,7 @@ def post_list_debug(request):
 
 class ProductList(generic.ListView):
     model=Product
-    paginate_by=100
+    paginate_by=settings.MYPAGINATION
 
 class ProductDetail(generic.DetailView):
     model=Product
