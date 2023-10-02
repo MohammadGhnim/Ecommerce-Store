@@ -6,6 +6,7 @@ from .models import Product, Brand
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from .filters import ProductFilter
+from .pagination import MyPagination
 
 
 
@@ -29,6 +30,7 @@ class ProuctListAPI(generics.ListAPIView):
     filterset_fields = ['brand', 'flag', 'name', 'price']
     filterset_class=ProductFilter
     ordering_fields = ['price', 'flag']
+    pagination_class=MyPagination
     # filter_backends = [filters.SearchFilter]
     # search_fields = ['name', 'subtitle']
 
