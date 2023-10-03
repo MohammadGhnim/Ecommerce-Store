@@ -59,7 +59,7 @@ class OrderDetailAPI(generics.RetrieveAPIView):
 
 
 
-class CreateOrder(generics.GenericAPIView):
+class CreateOrderAPI(generics.GenericAPIView):
     
     def post(self,request,*args, **kwargs):
         user =User.objects.get(username=self.kwargs['username'])
