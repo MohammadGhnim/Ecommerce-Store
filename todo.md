@@ -1,8 +1,6 @@
 - sql
 - add orders
-- add cart
 - add users
-- add api 
 - caching 
 - celery
 - redis
@@ -13,3 +11,19 @@
 - deploy
 - ajax
 - translation
+
+
+------------
+
+- vuejs
+- project django + vuejs
+- unit testing
+
+
+.... 
+- interview:
+    - cv
+    - github
+    - linkdIn
+    - common interviw questions
+    - mock interview
