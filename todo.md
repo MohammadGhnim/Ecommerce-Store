@@ -1,16 +1,14 @@
-- sql
 - add orders
-- add users
+- tof
 - caching 
 - celery
 - redis
 - docker
 - coupons
 - payment
-- charts
 - deploy
 - ajax
-- translation
+- translation???
 
 
 ------------
