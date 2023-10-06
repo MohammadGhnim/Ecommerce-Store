@@ -44,9 +44,23 @@
             data: {
                 labels: ['Users', 'Products', 'Brands', 'Reviews', 'Orders'],
                 datasets: [{
-                label: '# of Votes',
-                data: [{{users}}, {{products}}, {{brands}}, {{reviews}}, {{orders}}],
-                borderWidth: 1
+                    label: '# of Votes',
+                    data: [{{users}}, {{products}}, {{brands}}, {{reviews}}, {{orders}}],
+                    borderWidth: 3,
+                    backgroundColor: [
+                            'rgba(250,100,120,0.4)',
+                            'rgba(250,150,120,0.4)',
+                            'rgba(200,100,150,0.4)',
+                            'rgba(250,100,20,0.4)',
+                            'rgba(150,100,20,0.4)',
+                        ],
+                    borderColor: [
+                            'rgba(250,100,120,1)',
+                            'rgba(250,150,120,1)',
+                            'rgba(200,100,150,1)',
+                            'rgba(250,100,20,1)',
+                            'rgba(150,100,20,1)',
+                        ]
                 }]
             },
             options: {
@@ -81,7 +95,7 @@
         });
         const ctx3 = document.getElementById('myChart3');
         new Chart(ctx3, {
-            type: 'pie',
+            type: 'doughnut',
             data: {
                 labels: ['New', 'Sale', 'Feature'],
                 datasets: [{
