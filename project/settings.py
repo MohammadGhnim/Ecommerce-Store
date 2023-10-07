@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django_filters',
     #'rest_framework_simplejwt',
     'dj_rest_auth',
+    "django_bootstrap5",
 
 
 
