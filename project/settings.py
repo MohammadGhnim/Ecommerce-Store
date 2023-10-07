@@ -189,6 +189,6 @@ REST_AUTH = {
     'JWT_AUTH_COOKIE': 'jwt-auth',
 }
 
-LOCALE_PATHS = [
-    'locale'
-]
+LOCALE_PATHS = ['locale']
+
+AUTHENTICATION_BACKENDS=['accounts.backends.EmailBackend']
