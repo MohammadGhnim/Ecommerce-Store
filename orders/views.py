@@ -19,6 +19,9 @@ class OrderList(LoginRequiredMixin,ListView):
         return queryset
 
 
+def checkout_page(request):
+    return render(request, 'orders/checkout.html',{})
+
 def add_to_cart(request):
     # get data frontend
     product=Product.objects.get(id=request.POST['product_id'])
