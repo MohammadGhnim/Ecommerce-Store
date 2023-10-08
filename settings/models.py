@@ -29,4 +29,4 @@ class DeliveryFee(models.Model):
 
 
     def __str__(self):
-        return self.fee
+        return str(self.fee)
