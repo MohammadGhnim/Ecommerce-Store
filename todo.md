@@ -1,27 +1,20 @@
-- add orders
-- tof
+- ajax
 - caching 
-- celery
 - redis
+- celery
 - docker
-- coupons
 - payment
 - deploy
-- ajax
-- translation???
-
+- tof
 
 ------------
-
 - vuejs
-- project django + vuejs
-- unit testing
+- testing
+------------
+- interview
+
+------------
+I can't applied it:
+    - translation???
 
 
-.... 
-- interview:
-    - cv
-    - github
-    - linkdIn
-    - common interviw questions
-    - mock interview
