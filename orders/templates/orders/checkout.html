@@ -36,11 +36,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="alert-info">
-                            <p>Returning customer? <a href="login.html">Click here to login</a></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
                         <div class="account-card">
                             <div class="account-title">
                                 <h4>Your order</h4>
@@ -80,8 +75,9 @@
                                 </div>
                                 <div class="chekout-coupon">
                                     <button class="coupon-btn">Do you have a coupon code?</button>
-                                    <form class="coupon-form">
-                                        <input type="text" placeholder="Enter your coupon code">
+                                    <form class="coupon-form" method="post">
+                                        {% csrf_token %}
+                                        <input type="text" name="coupon" placeholder="Enter your coupon code">
                                         <button type="submit"><span>apply</span></button>
                                     </form>
                                 </div>
