@@ -16,5 +16,6 @@
 ------------
 I can't applied it:
     - translation???
+    - explain more about settings (ordering, structure importance)!!!
 
 
