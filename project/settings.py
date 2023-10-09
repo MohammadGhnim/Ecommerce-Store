@@ -196,6 +196,8 @@ LOCALE_PATHS = ['locale']
 LANGUAGES = [
     ("ar", ("Arabic")),
     ("en", ("English")),
+    ("de", ("German")),
+
 ]
 
 #AUTHENTICATION_BACKENDS=['accounts.backends.EmailBackend']

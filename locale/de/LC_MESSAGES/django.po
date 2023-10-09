@@ -8,83 +8,79 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-09 16:42+0200\n"
-"PO-Revision-Date: 2023-10-09 17:34+0000\n"
-"Last-Translator:   <mohammadghnim92@gmail.com>\n"
+"POT-Creation-Date: 2023-10-09 19:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Translated-Using: django-rosetta 0.9.9\n"
-
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: .\products\models.py:21 .\products\models.py:51
 msgid "name"
-msgstr "الاسم"
+msgstr "Name"
 
 #: .\products\models.py:22
 msgid "description"
-msgstr "الوصف"
+msgstr "Beschreibung"
 
 #: .\products\models.py:23
 msgid "sku"
-msgstr "الكود"
+msgstr "Artikelnummer"
 
 #: .\products\models.py:24
 msgid "price"
-msgstr "السعر"
+msgstr "Preis"
 
 #: .\products\models.py:25
 msgid "subtitle"
-msgstr "العنوان الفرعي"
+msgstr "Untertitle"
 
 #: .\products\models.py:26
 msgid "brand"
-msgstr "ماركة"
+msgstr "Marke"
 
 #: .\products\models.py:27 .\products\models.py:47 .\products\models.py:52
 msgid "image"
-msgstr "الصورة"
+msgstr "Bild"
 
 #: .\products\models.py:28
 msgid "flag"
-msgstr "علامة"
+msgstr "Flagge"
 
 #: .\products\models.py:46 .\products\models.py:90
 msgid "product"
-msgstr "المنتج"
+msgstr "Produkt"
 
 #: .\products\models.py:89
 msgid "user"
-msgstr "المستخدم"
+msgstr "Benutzer"
 
 #: .\products\models.py:91
 msgid "review"
-msgstr "التعليق"
+msgstr "Rezension"
 
 #: .\products\models.py:92
 msgid "rate"
-msgstr "التقييم"
+msgstr "bewerten"
 
 #: .\products\models.py:93
 msgid "create date"
-msgstr "تاريخ الانشاء"
+msgstr "Erstellungsdatum"
 
-#: .\templates\base.html:174
+#: .\templates\base.html:192
 msgid "Home"
-msgstr "الصفحة الرئيسية"
+msgstr "Startseite"
 
-#: .\templates\base.html:177
+#: .\templates\base.html:195
 msgid "Shop"
-msgstr "التسوق"
+msgstr "Einkaufen"
 
-#: .\templates\base.html:180
-#, fuzzy
-#| msgid "brand"
+#: .\templates\base.html:198
 msgid "Brands"
-msgstr "ماركة"
+msgstr "Marken"
 
-#: .\templates\base.html:183
+#: .\templates\base.html:201
 msgid "Orders"
-msgstr "الطلبات"
+msgstr "Bestellungen"

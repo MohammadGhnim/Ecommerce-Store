@@ -14,8 +14,8 @@
 - interview
 
 ------------
-I can't applied it:
-    - translation???
+Question:
+    - translation: can we change the language from admin panel?
     - explain more about settings (ordering, structure importance)!!!
 
 
