@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     "django_bootstrap5",
     'rosetta',
+    'tof',
 
 
 
