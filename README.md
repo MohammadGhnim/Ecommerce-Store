@@ -1,15 +1,15 @@
 # Django Ecommerce Store
-Das Projekt ist eine Beispielanwendung für einen einfachen E-Commerce-Shop, der in Python und Django geschrieben ist. Es zeigt, wie man grundlegende Funktionen eines Online-Shops wie das Anzeigen von Produkten, das Hinzufügen von Produkten zum Warenkorb, das Durchführen von Bestellungen und das Verwalten von Benutzerkonten implementieren kann. Das Projekt ist für Anfänger geeignet, die lernen möchten, wie man Webanwendungen mit Django erstellt und grundlegende Konzepte des E-Commerce-Handels verstehen möchten.
+The project is a sample application for a simple e-commerce store written in Python and Django. It shows how to implement basic functions of an online store such as viewing products, adding products to the shopping cart, fulfilling orders and managing user accounts. The project is suitable for beginners who want to learn how to build web applications with Django and understand basic concepts of e-commerce commerce.
 
 
 Features:                                            
-  * Produkte                                           
-  * Bestellungen                                       
-  * Gutscheine                                          
-  * Benutzer                                           
-  * Zahlungen                                          
+  * Products                                          
+  * Orders                                     
+  * Coupons                                      
+  * Users                                          
+  * Payments                                         
   * API                                               
-  * Dokumentation                                       
+  * Documentation                                      
 
 Tech Stack:
   * Python
